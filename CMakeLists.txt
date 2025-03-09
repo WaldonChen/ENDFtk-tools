@@ -2,7 +2,7 @@
 # Preamble
 ########################################################################
 
-cmake_minimum_required( VERSION 3.27 )
+cmake_minimum_required( VERSION 3.22 )
 
 set( subproject OFF )
 if( DEFINED PROJECT_NAME )
@@ -41,7 +41,7 @@ option( tools.installation "Install njoy::tools" ON )
 # Dependencies
 ########################################################################
 
-list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/.cmake)
+# list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/.cmake)
 include( cmake/dependencies.cmake )
 
 ########################################################################
